@@ -1,8 +1,8 @@
-name: Flutter iOS Build for AltStore
+name: Flutter iOS Build for AltStore (Client)
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master ] # Сработает для веток main или master
 
 jobs:
   build:
@@ -35,20 +35,26 @@ jobs:
       run: |
         mkdir -p Payload
         
-        # Копируем приложение по точному пути, который показала диагностика
-        APP_PATH="/Users/runner/work/Partner/Partner/build/ios/iphoneos/Release.app"
+        # Заходим в папку скомпилированного приложения
+        cd build/ios/iphoneos/
         
-        if [ ! -d "$APP_PATH" ]; then
-          echo "Ошибка: Приложение не найдено по пути $APP_PATH"
+        # Автоматически находим готовый .app файл, как бы он ни назывался
+        REAL_APP=$(ls -d *.app | head -n 1)
+        
+        if [ -z "$REAL_APP" ]; then
+          echo "Ошибка: В папке сборки не найдено ни одного .app файла!"
           exit 1
         fi
         
-        echo "Успешно копируем приложение из: $APP_PATH"
-        cp -r "$APP_PATH" Payload/
-        zip -r Partner.ipa Payload
+        echo "Успешно нашли приложение: $REAL_APP"
+        
+        # Копируем приложение в Payload и архивируем в .ipa
+        cp -r "$REAL_APP" ../../../Payload/
+        cd ../../../
+        zip -r Client.ipa Payload
 
     - name: Upload IPA Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: partner-ios-app
-        path: Partner.ipa
+        name: client-ios-app
+        path: Client.ipa
