@@ -1,0 +1,54 @@
+name: Flutter iOS Build for AltStore
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        channel: 'stable'
+        architecture: x64
+
+    - name: Get Flutter dependencies
+      run: flutter pub get
+
+    - name: Install CocoaPods Dependencies
+      run: |
+        cd ios
+        pod install --repo-update
+        cd ..
+
+    - name: Build Flutter iOS (No Sign)
+      run: |
+        flutter build ios --no-codesign --release
+
+    - name: Prepare APP folder for AltStore
+      run: |
+        mkdir -p Payload
+        
+        # Копируем приложение по точному пути, который показала диагностика
+        APP_PATH="/Users/runner/work/Partner/Partner/build/ios/iphoneos/Release.app"
+        
+        if [ ! -d "$APP_PATH" ]; then
+          echo "Ошибка: Приложение не найдено по пути $APP_PATH"
+          exit 1
+        fi
+        
+        echo "Успешно копируем приложение из: $APP_PATH"
+        cp -r "$APP_PATH" Payload/
+        zip -r Partner.ipa Payload
+
+    - name: Upload IPA Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: partner-ios-app
+        path: Partner.ipa
