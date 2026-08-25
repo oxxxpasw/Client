@@ -1,0 +1,3 @@
+NSLocationWhenInUseUsageDescription = "Это приложение использует геолокацию для поиска ближайших магазинов";
+NSCameraUsageDescription = "Это приложение требует доступа к камере для сканирования QR-кодов";
+CFBundleDisplayName = "Coffee\U0020LiL";

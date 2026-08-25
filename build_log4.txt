@@ -1,0 +1,8 @@
+
+Running Gradle task 'assembleAppreleaseAppgalleryRelease'...     
+Font asset "CustomIcons.ttf" was tree-shaken, reducing it from 57000 to 896 bytes (98.4% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.
+Font asset "DerevenkaDobrenka.ttf" was tree-shaken, reducing it from 13292 to 5416 bytes (59.3% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.
+Font asset "CupertinoIcons.ttf" was tree-shaken, reducing it from 257628 to 1204 bytes (99.5% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.
+Font asset "MaterialIcons-Regular.otf" was tree-shaken, reducing it from 1645184 to 3192 bytes (99.8% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.
+Running Gradle task 'assembleAppreleaseAppgalleryRelease'...       135,0s
+√ Built build\app\outputs\flutter-apk\app-appreleaseappgallery-release.apk (193.2MB)

@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e
+if [ -z "$1" ]
+# Find and increment the version number.
+then
+  perl -i -pe 's/^(version:\s+\d+\.\d+\.)(\d+)(\+)(\d+)$/$1.($2+1).$3.($4+1)/e' pubspec.yaml
+else
+  sed -i '' "s/^version.*/version: $1/g" pubspec.yaml
+fi
+# Commit change.
+version=`grep 'version: ' pubspec.yaml | sed 's/version: //'`
+git commit -m "Bump version to $version" pubspec.yaml

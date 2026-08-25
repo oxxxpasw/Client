@@ -1,0 +1,126 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services"
+}
+
+apply from: "$rootDir/gradle/build-config.gradle"
+if(project.taskName.contains('appgallery')) {
+    apply plugin: 'com.huawei.agconnect'
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+def mapkitApiKey = localProperties.getProperty('yandexMapkitApiKey')
+if (mapkitApiKey == null) {
+    throw new FileNotFoundException("yandexMapkitApiKey is not set in android/local.properties")
+}
+
+android {
+    compileSdkVersion 36
+    ndkVersion "28.2.13676358"
+    buildFeatures {
+        buildConfig = true
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        applicationId "by.lilcoffee.app"
+        minSdkVersion 26
+        targetSdkVersion 36
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        multiDexEnabled true
+        resourceConfigurations += ['en', 'ru']
+        buildConfigField "String", "MAPKIT_API_KEY", "\"${mapkitApiKey}\""
+    }
+
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+    buildTypes {
+        release {
+            if (keystoreProperties['storeFile'] != null && file(keystoreProperties['storeFile']).exists()) {
+                signingConfig signingConfigs.release
+            } else {
+                signingConfig signingConfigs.debug
+            }
+        }
+    }
+
+    flavorDimensions "release-type", "store-type"
+
+    productFlavors {
+        apprelease {
+            dimension "release-type"
+        }
+        apptest {
+            dimension "release-type"
+            applicationIdSuffix  ".test"
+            versionNameSuffix "-test"
+        }
+        googleplay {
+            dimension "store-type"
+        }
+        appgallery {
+            dimension "store-type"
+        }
+    }
+    namespace 'ru.sosedifedi.app'
+
+    lint {
+        checkReleaseBuilds false
+    }
+
+
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.core:core-splashscreen:1.0.1'
+    implementation 'com.yandex.android:maps.mobile:4.22.0-lite'
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.4'
+    if(project.taskName.contains('appgallery')){
+        implementation 'com.huawei.agconnect:agconnect-core:1.9.1.300'
+    }
+}

@@ -1,0 +1,15 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "by.lilcoffee.app",
+    "sha256_cert_fingerprints":
+    [
+      "7D:42:28:35:0C:15:7C:EF:51:65:60:43:72:68:3F:91:53:8C:7D:3A:FC:DC:72:D5:D9:15:33:1D:3D:2C:F3:53",
+      "38:2E:D7:C7:A2:99:B5:59:87:4E:13:AF:69:72:B1:30:E0:A6:F7:D6:1C:BF:D4:E3:5F:14:8D:D1:84:68:F5:44",
+      "45:C2:E4:24:23:F0:3A:6E:67:72:19:D8:C0:84:38:2D:63:43:43:48:C5:CB:C4:C2:62:4E:E8:06:9C:28:4D:45",
+      "64:B9:87:B1:68:97:FC:E5:57:D8:F2:83:58:50:EB:B2:2D:8D:65:7E:7E:EB:14:BF:56:13:E2:C7:27:2A:71:2C",
+      "4F:E1:1A:81:3B:B6:BC:C1:11:68:FC:AE:2B:9D:35:A1:16:81:D9:24:FF:68:EA:9B:E8:55:9C:C6:0E:8B:D8:D1"
+    ]
+  }
+}]

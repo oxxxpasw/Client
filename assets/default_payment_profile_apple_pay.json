@@ -1,0 +1,14 @@
+{
+  "provider": "apple_pay",
+  "data": {
+    "merchantIdentifier": "merchant.by.lilcoffee.app",
+    "displayName": "Coffee LiL",
+    "merchantCapabilities": ["3DS", "debit", "credit"],
+    "supportedNetworks": ["visa", "masterCard", "mir"],
+    "countryCode": "BY",
+    "currencyCode": "BYN",
+    "requiredBillingContactFields": ["emailAddress", "name", "phoneNumber"],
+    "requiredShippingContactFields": [],
+    "shippingMethods": []
+  }
+}

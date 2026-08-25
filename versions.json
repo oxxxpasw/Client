@@ -1,0 +1,10 @@
+{
+  "immediate_update": {
+    "version": "1.0.0+0",
+    "enabled": true
+  },
+  "optional_update": {
+    "version": "1.0.0+0",
+    "enabled": true
+  }
+}

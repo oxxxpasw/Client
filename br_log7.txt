@@ -1,0 +1,8 @@
+Because isar_community_generator <3.3.0-dev.2 depends on source_gen ^2.0.0 and freezed >=2.4.8 <2.5.8 depends on source_gen ^1.4.0, isar_community_generator <3.3.0-dev.2 is incompatible with freezed >=2.4.8 <2.5.8.
+And because no versions of freezed match >2.5.8 <3.0.0, isar_community_generator <3.3.0-dev.2 is incompatible with freezed >=2.4.8 <2.5.8-∞ or >2.5.8 <3.0.0.
+And because freezed 2.5.8 depends on analyzer ^7.0.0 and isar_community_generator <3.3.0-dev.1 depends on analyzer ^6.9.0, isar_community_generator <3.3.0-dev.1 is incompatible with freezed ^2.4.8.
+So, because sosedifedi depends on both isar_community_generator 3.2.1 and freezed ^2.5.7, version solving failed.
+
+
+You can try the following suggestion to make the pubspec resolve:
+* Try an upgrade of your constraints: dart pub upgrade --major-versions

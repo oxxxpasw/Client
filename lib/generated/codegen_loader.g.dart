@@ -1,0 +1,700 @@
+// DO NOT EDIT. This is code generated via package:easy_localization/generate.dart
+
+// ignore_for_file: prefer_single_quotes, avoid_renaming_method_parameters
+
+import 'dart:ui';
+
+import 'package:easy_localization/easy_localization.dart' show AssetLoader;
+
+class CodegenLoader extends AssetLoader{
+  const CodegenLoader();
+
+  @override
+  Future<Map<String, dynamic>?> load(String path, Locale locale) {
+    return Future.value(mapLocales[locale.toString()]);
+  }
+
+  static const Map<String,dynamic> ru = {
+  "title": "Coffee LiL",
+  "seconds": {
+    "zero": "{} секунд",
+    "one": "{} секунда",
+    "two": "{} секунды",
+    "few": "{} секунды",
+    "many": "{} секунд",
+    "other": "{} секунд"
+  },
+  "exit": "Выход",
+  "register": "Зарегистрироваться",
+  "bonusPoints": "Баллы",
+  "save": "Сохранить",
+  "yes": "Да",
+  "no": "Нет",
+  "ok": "Ок",
+  "cancel": "Отмена",
+  "reload": "Перезагрузить",
+  "chooseDate": "Выберите дату",
+  "chooseTime": "Выберите время",
+  "next": "Продолжить",
+  "messages": {
+    "success": {
+      "label": "Успешно",
+      "productSaved": "Товар сохранен",
+      "productAddedToCart": "Товар добавлен в корзину",
+      "dataUpdate": "Данные успешно обновлены",
+      "newOrder": "Приятного аппетита!",
+      "dataSent": "Данные успешно отправлены"
+    },
+    "error": {
+      "label": "Ошибка",
+      "somethingWentWrong": "Что-то пошло не так :(",
+      "unAuthorized": "Ошибка авторизации.",
+      "tooManyRequests": "Превышено количество запросов.",
+      "noNetwork": "Нет подключения к сети.",
+      "undefinedError": "Неизвестная ошибка.",
+      "unconfirmed": "Пользователь не подтвержден.",
+      "qrScanUndefinedError": "Ошибка при считывании QR кода.",
+      "minOrderPriseErrorMessage": "Сумма заказа меньше минимальной.",
+      "preOrderDisabled": "Оформление заказа временно не доступно.",
+      "pointNotSelected": "Точка самовывоза не выбрана",
+      "orderError": "Не удалось создать заказ",
+      "orderOfferError": "Необходимо принять условия договора публичной оферты",
+      "productNotFound": "Товар не найден",
+      "fridgeNotFound": "Микромаркет не найден",
+      "expiredProduct": "Товар просрочен",
+      "invalidBarcode": "Некорректный штрих-код",
+      "authError": "Попробуйте повторить действие позже"
+    },
+    "warning": {
+      "label": "Внимание"
+    }
+  },
+  "stores": {
+    "chooseStore": "Выберите кофе-бар"
+  },
+  "search": {
+    "label": "Поиск",
+    "searchResultCount": {
+      "zero": "Ничего не найдено",
+      "one": "{} результат",
+      "few": "{} результата",
+      "many": "{} результатов",
+      "other": "{} результатов"
+    },
+    "nothingFound": "Ничего не найдено",
+    "resultNotFound": "Результаты не найдены. Пожалуйста, попробуйте снова."
+  },
+  "cart": {
+    "productAdded": "Товар добавлен",
+    "scanToAdd": "Отсканируйте штрих-коды товаров, которые хотите приобрести",
+    "openFridge": "Откройте холодильник",
+    "openFridgeAgain": "Открыть холодильник еще раз",
+    "payment": "Оплата через {}",
+    "checkout": "Оплатить",
+    "cartItemsCount": {
+      "zero": "{} товаров",
+      "one": "{} товар",
+      "two": "{} товара",
+      "few": "{} товара",
+      "many": "{} товаров",
+      "other": "{} товаров"
+    },
+    "bonusesCanSpent": "Потратить бонусы: {}",
+    "useBonuses": "Потратить бонусы",
+    "aboutBonusesSum": "Почему такое количество бонусов?",
+    "didNotBuyAnything": "Я ничего не купил",
+    "cancelOrderQuestion": "Вы уверены, что хотите прервать покупку?",
+    "storeNotSelected": {
+      "title": "Выберите микромаркет, из которого взяты товары",
+      "confirm": "Понятно"
+    },
+    "weightInKG": "{}кг",
+    "weightInG": "{}г",
+    "finalSumForPayment": "Итого к оплате",
+    "addExpiredProductPopup": {
+      "title": "Похоже, срок годности этого товара истек, проверьте дату на этикетке",
+      "action": "Добавить в корзину"
+    },
+    "orderFrom": "Откуда взяты товары?",
+    "toCart": "В корзину | {}"
+  },
+  "userProfile": {
+    "label": "Профиль",
+    "inviteFriends": "Пригласи друзей!",
+    "inviteFriendsDescr": "Пригласи друзей зарегистрироваться в приложении по твоему уникальному коду и получи бонусы, когда они совершат первую покупку.",
+    "personalInformationView": "Для того, чтобы просматривать личную информацию, необходимо зарегистрироваться.",
+    "exitQuestion": "Вы действительно хотите выйти?",
+    "navLabels": {
+      "bonuses": "Баллы",
+      "personalData": "Пользовательские данные",
+      "cityChoose": "Выбор города",
+      "orderHistory": "История покупок",
+      "notifications": "Уведомления",
+      "giveFeedback": {
+        "label": "Нравится приложение?",
+        "description": "Оцените его, это поможет нам стать лучше"
+      },
+      "legalInfo": "Реквизиты",
+      "reportProblem": "Сообщить о проблеме",
+      "coupons": {
+        "label": "Сертификаты",
+        "emptyDescription": "У вас нет доступных сертификатов"
+      },
+      "enterPromo": "Введите промокод"
+    }
+  },
+  "personalData": {
+    "label": "Личные данные",
+    "name": {
+      "label": "Имя",
+      "hint": "Как вас зовут?"
+    },
+    "surName": {
+      "label": "Фамилия",
+      "hint": "Какая у вас фамилия?"
+    },
+    "birthDay": {
+      "label": "Дата рождения",
+      "hint": "Не указана"
+    },
+    "phone": {
+      "label": "Телефон",
+      "hint": "Номер телефона"
+    },
+    "email": {
+      "label": "Электронная почта",
+      "hint": "Для получения чеков"
+    },
+    "sex": {
+      "label": "Пол",
+      "men": "Мужской",
+      "woman": "Женский",
+      "unknown": "Не определен"
+    },
+    "deleteAccount": "Удалить профиль",
+    "deleteAccountQuestion": {
+      "title": "Вы действительно хотите удалить профиль?",
+      "message": "Бонусные баллы и история покупок будут утеряны."
+    }
+  },
+  "orderHistory": {
+    "label": "История покупок",
+    "orderLabel": "Покупка от {}",
+    "amount": "{} шт",
+    "summ": "Итого",
+    "products": "Товары",
+    "unpaidOrder": "Не оплачена",
+    "cancelledOrder": "Отменена",
+    "refundedOrder": "Возврат",
+    "orderCard": {
+      "title": "{address} ({name})"
+    }
+  },
+  "cityChoose": {
+    "label": "Выберите город",
+    "skip": "Пропустить",
+    "chooseCityToSee": "Выберите город, чтобы посмотреть доступные холодильники",
+    "findCity": "Найти город"
+  },
+  "confirmOrder": {
+    "confirm": "Оформление заказа",
+    "paymentType": "Способ оплаты",
+    "toPayment": "К оплате:",
+    "goToPayment": "Оплатить",
+    "time": {
+      "pickUpIn": "Забрать через",
+      "pickUpTime": "Сегодня, {}",
+      "soon": "Ближайшее время",
+      "atTheTime": "Ко времени"
+    },
+    "waitPayment": "Ожидаем подтверждение оплаты от банка",
+    "paymentDismissDialogMessage": "Вы действительно хотите покинуть страницу оплаты?"
+  },
+  "sbp": {
+    "choose": "Выберите банк для подтверждения оплаты",
+    "banksNotFound": "На вашем устройстве не установлены приложения с поддержкой СБП",
+    "enterBankName": "Введите название банка",
+    "waitPayment": "Ожидаем подтверждение оплаты от банка",
+    "chooseAnotherBank": "Оплатить через другой банк",
+    "appNotInstalled": "У вас не установлено приложение банка, попробуйте оплатить через другой банк",
+    "appNotInstalledConfirm": "Понятно"
+  },
+  "fridge": {
+    "label": "Микромаркеты",
+    "scanQR": "Отсканируйте QR код на холодильнике",
+    "list": "Списком",
+    "chooseCity": "Выберите город для просмотра доступных микромаркетов",
+    "chooseCityAction": "Выбрать город",
+    "openFridge": "Отсканировать QR",
+    "productsInFridge": "Товары в микромаркете",
+    "coffee": "Кофе",
+    "food": "Еда",
+    "distance": {
+      "inMeters": "{} м",
+      "inKiloMeters": "{} км"
+    },
+    "open": "Открыть ещё раз",
+    "scanner": "Сканер",
+    "another": "Выбрать другой",
+    "searchProduct": "Поиск по штрихкоду или названию товара",
+    "helpers": {
+      "scanFridge": "Расположите QR-код микромаркета в выделенной области",
+      "openFridge": "Откройте микромаркет",
+      "scanProduct": "Расположите штрих-код товара в выделенной области"
+    },
+    "fridgeNameWithAddress": "{name}, {address}",
+    "barcodeInput": {
+      "hint": "Найти по штрихкоду или названию",
+      "action": "Добавить",
+      "barcodeAddedHilt": "Товар добавлен в корзину!",
+      "barcodeNotFound": "Товар с таким штрихкодом не найден, попробуйте ввести еще раз",
+      "barcodeNotFoundConfirm": "Понятно"
+    },
+    "chooseProductsFridge": "Выберите микромаркет, из которого взяты товары",
+    "haveProducts": "У меня уже есть товар",
+    "permissionRequest": {
+      "title": "Доступ к камере запрещен",
+      "message": "Чтобы настроить доступ к камере, перейдите в настройки и включите камеру для приложения @:title",
+      "cancelLabel": "Отмена",
+      "goToSettingsLabel": "Настройки"
+    },
+    "hasUnfinishedPurchase": {
+      "message": "Вы уже начали собирать корзину дополните ее или очистите для продолжения покупок",
+      "action": "В корзину"
+    },
+    "searchPoint": "Поиск магазина"
+  },
+  "products": {
+    "label": "Каталог",
+    "showOnMap": "На карте",
+    "notAvailable": "Нет в наличии",
+    "productNotAvailable": "Товар не доступен для заказа",
+    "in100g": "В 100 граммах",
+    "descr": "Описание",
+    "ingredients": "Состав",
+    "caloriesIntake": {
+      "short": "КБЖУ {energy}/{proteins}/{fat}/{carbohydrates}",
+      "energy": "Ккал",
+      "proteins": "Белки, г",
+      "fat": "Жиры, г",
+      "carbohydrates": "Углеводы, г"
+    },
+    "modifiers": {
+      "minOptions": "Минимальное кол-во опций — {}",
+      "maxOptions": "Максимальное кол-во опций — {}"
+    },
+    "productCode": "Код товара: {}"
+  },
+  "orderDetails": {
+    "summ": "Сумма: ",
+    "readyTime": "Заказ будет готов: ",
+    "orderNumber": "Заказ №{}",
+    "microMarket": "Адрес",
+    "purchase": "Покупка",
+    "purchaseWithStatus": "Покупка • {}",
+    "cancelOrderDialog": {
+      "title": "Вы уверены, что хотите прервать покупку?"
+    },
+    "downloadReceipt": "Скачать чек",
+    "reportProblem": "Сообщить о проблеме | Оставить отзыв",
+    "receiptNotReadyPopup": {
+      "title": "Через пару минут здесь\nпоявится ваш чек",
+      "action": "Понятно"
+    },
+    "cancelOrder": "Отменить покупку",
+    "statuses": {
+      "unpaid": "Не оплачена",
+      "cancelled": "Отменена",
+      "refunded": "Возврат"
+    },
+    "bonusPayment": "Оплата бонусами: ",
+    "createReview": "Оставить отзыв"
+  },
+  "auth": {
+    "title": "Вход",
+    "caption": "Войдите, чтобы получить доступ ко всем возможностям приложения",
+    "enterPhone": "Укажите телефон",
+    "wrongPhone": "Некорректный номер телефона",
+    "enterCode": "Введите код",
+    "codeSentTo": "Отправили СМС на",
+    "wrongCode": "Код введен неверно",
+    "resendCode": "Выслать повторный код",
+    "codeNotReceived": "Не пришел код?",
+    "createAccount": "Зарегистрироваться",
+    "enter": "Войти",
+    "skip": "Пропустить вход",
+    "retryTime": "Через {} сек. можно будет запросить повторный",
+    "userAgreement": {
+      "1": "Нажимая «Войти» вы соглашаетесь с ",
+      "2": "правилами использования",
+      "3": " и ",
+      "4": "политикой конфиденциальности"
+    },
+    "needAcceptUserAgreement": "Необходимо принять соглашение",
+    "openWithoutRegMessage": "Чтобы приобрести товары необходимо авторизоваться"
+  },
+  "reportProblem": {
+    "label": "Сообщить о проблеме",
+    "description": "Если у вас возникли трудности, вы можете обратиться на нашу горячую линию. Мы работаем круглосуточно!",
+    "qr_description": "Попробуйте повторить действие еще раз через несколько минут",
+    "makePhoneCall": "Сообщить",
+    "buttonText": "Сообщить\nо проблеме"
+  },
+  "splash": {
+    "update": {
+      "label": "Пора\n   обновляться!",
+      "descr": "Ваша версия приложения устарела, обновите его, чтобы продолжить пользоваться",
+      "action": "Обновить"
+    },
+    "error": {
+      "label": "Скоро всё\n      починим!",
+      "descr": "У нас случились технические неполадки, попробуйте зайти позже"
+    }
+  },
+  "map": {
+    "label": "Карта"
+  },
+  "lastPurchase": {
+    "notCompleted": "Вы не завершили покупку",
+    "clickToAddAndBuy": "Нажмите, чтобы добавить товары и оплатить",
+    "clickToBuy": "Нажмите, чтобы оплатить",
+    "unpaidProducts": "У вас есть неоплаченные товары",
+    "unpaidOrder": "Вы не оплатили покупку",
+    "clickToPayOrCancel": "Нажмите, чтобы оплатить или отменить"
+  },
+  "onboarding": {
+    "skip": "Пропустить",
+    "next": "Далее",
+    "confirm": "Понятно!",
+    "exitQuestion": "Вы уверены, что хотите прервать обучение?",
+    "start": {
+      "title": "Привет, я Федя!",
+      "text": "Давай я быстренько покажу тебе что можно сделать в нашем приложении!"
+    },
+    "page1": {
+      "title": "На данной вкладке можно посмотреть доступные микромаркеты и их ассортимент"
+    },
+    "page2": {
+      "title": "Доступные микромаркеты обозначены таким символом"
+    },
+    "page3": {
+      "title": "А также можно посмотреть их списком"
+    },
+    "page4": {
+      "title": "На вкладке «Каталог» можно просматривать весь ассортимент во всех микромаркетах и узнать подробнее о товарах"
+    },
+    "page5": {
+      "title": "Нажав сюда можно перейти\nв профиль, в нем можно изменить город, посмотреть историю покупок и еще много интересного!"
+    },
+    "page6": {
+      "title": "Давай совершим первую покупку, открывай сканер!"
+    },
+    "page7": {
+      "title": "Здесь все просто - следуй инструкциям на экране!"
+    },
+    "page8": {
+      "title": "Если у вас уже есть товар - нажимайте сразу сюда"
+    }
+  },
+  "unfinishedPurchaseOnboarding": {
+    "page1": {
+      "title": "Если нужно вновь открыть микромаркет - нажмите \nна эту плашку"
+    },
+    "page2": {
+      "title": "Если вы не взяли товары, нажмите сюда"
+    }
+  },
+  "unpaidOrderOnboarding": {
+    "page1": {
+      "title": "Похоже, вы не оплатили последнюю покупку, если это так, произведите оплату"
+    },
+    "page2": {
+      "title": "Если вы не взяли товары, нажмите сюда"
+    },
+    "page3": {
+      "title": "А если возникнут\nсложности - сообщите нам"
+    }
+  },
+  "legal": {
+    "label": "Правовая информация",
+    "userAgreement": "Пользовательское cоглашение",
+    "publicOffer": "Публичная оферта",
+    "privacyPolicy": "Обработка персональных данныx"
+  },
+  "userBanned": {
+    "message": "Кажется, вы не оплатили последнюю покупку. Свяжитесь с нами для выяснения обстоятельств.",
+    "actionButtonText": "Сообщить"
+  },
+  "appMarket": {
+    "label": "Выберите магазин приложений"
+  },
+  "cartSearchScreen": {
+    "ready": "Готово ({})",
+    "emptyLabel": "Здесь будут результаты поиска",
+    "inputHint": "Введите штрихкод или название",
+    "exitDialog": {
+      "message": "Вы действительно хотите отменить добавление товаров?"
+    },
+    "weightProductPopUp": {
+      "title": "Это весовой товар, его можно добавить в корзину только отсканировав штрихкод на упаковке",
+      "action": "Понятно"
+    }
+  },
+  "hasUnpaidOrderPopup": {
+    "message": "У вас есть неоплаченная покупка, оплатите или отмените ее для продолжения покупок",
+    "action": "К покупке"
+  },
+  "feedbackPopup": {
+    "message": "Будем рады вашей обратной связи, мы принимаем ее в нашем чат-боте",
+    "action": "Открыть"
+  },
+  "feedbackBanner": {
+    "title": "Поделись мнением",
+    "message": "Нажми, чтобы оставить отзыв о микромаркете"
+  },
+  "changeCityPopup": {
+    "message": {
+      "1": "Кажется, вы находитесь в ",
+      "2": ", поменять город в настройках для отображения точек в нем?"
+    },
+    "action": "Поменять"
+  },
+  "bonusProgramInfoScreen": {
+    "title": "Бонусы",
+    "all": "Всего бонусов",
+    "byStoreTitle": "Бонусы по точкам",
+    "emptyBonusPrograms": "Совершите покупку, чтобы начать копить бонусы!",
+    "infoDialog": {
+      "message": "Вы копите и тратите бонусы у отдельных партнеров приложения, у каждого из них может быть свой % бонусов от покупки (или не быть)",
+      "action": "Понятно"
+    },
+    "howBonusesAccrued": "Как начисляются бонусы",
+    "unauthorizedView": {
+      "message": "Для того, чтобы копить бонусы, необходимо зарегистрироваться",
+      "action": "Зарегистрироваться"
+    },
+    "storeList": "В каких магазинах действует -->",
+    "bonusProgramName": "Бонусная программа: {}"
+  },
+  "mainScreen": {
+    "navBarLabels": {
+      "support": "Отзывы",
+      "profile": "Профиль",
+      "search": "Поиск",
+      "bonuses": "Бонусы",
+      "home": "На карте",
+      "scan": "Cканировать",
+      "promotions": "Акции"
+    }
+  },
+  "scanToStartScreen": {
+    "title": "Все просто: сканируй QR, выбирай напиток/сканируй еду и оплачивай!",
+    "scanQr": "Сканировать QR-код",
+    "enterNumber": "Ввести номер аппарата вручную",
+    "moreAbout": "Больше о напитках"
+  },
+  "qrScanScreen": {
+    "title": "Расположите QR-код в выделенной области"
+  },
+  "logout": "Выйти",
+  "createOrderScreen": {
+    "pageProgress": "Шаг {current}/{count}. ",
+    "pageNames": {
+      "address": "Проверьте адрес",
+      "choose": "Выберите напиток",
+      "payment": "Оплата",
+      "inProgress": "Кофе готовится",
+      "ready": "Ваш бонус"
+    }
+  },
+  "checkAddressScreen": {
+    "title": "Проверьте адрес автомата",
+    "wrongAddressBtnText": "Адрес не верный",
+    "bonusesCanSpent": "В этом автомате вам доступно",
+    "bonusesValue": {
+      "zero": "{} бонусов",
+      "one": "{} бонус",
+      "two": "{} бонуса",
+      "few": "{} бонуса",
+      "many": "{} бонусов",
+      "other": "{} бонусов"
+    },
+    "actionText": "Далее"
+  },
+  "choosePayment": {
+    "title": "Выберите способ оплаты",
+    "deactivateCardDialog": {
+      "title": "Вы действительно хотите удалить карту {}?"
+    },
+    "successCardDeactivation": "Карта успешно удалена",
+    "linkCard": "Привязать карту",
+    "changePaymentType": "Оплатить другим способом | {}"
+  },
+  "feedbackTab": {
+    "title": "Чем вы хотите поделиться?",
+    "unauthorized": {
+      "title": "Для того, чтобы оставить отзыв, необходимо зарегистрироваться.",
+      "action": "Зарегистрироваться"
+    },
+    "feedbackType": {
+      "purchase": "Покупка",
+      "store": "Кофемашина | Микромаркет",
+      "app": "Работа приложения",
+      "otherType": "Другое"
+    },
+    "userFeedbackList": {
+      "title": "Мои отзывы ({})"
+    }
+  },
+  "feedbackScreen": {
+    "title": "Создание отзыва",
+    "send": "Отправить",
+    "rating": {
+      "label": "Коснитесь для оценки"
+    },
+    "comment": {
+      "label": "Отзыв",
+      "hint": "Нажмите, чтобы начать писать"
+    },
+    "photo": {
+      "label": "Фото (не более 3х)"
+    },
+    "placeholder": {
+      "title": "Отзывы",
+      "message": "Ведутся работы, скоро раздел станет активным",
+      "action": "Понятно"
+    },
+    "store": {
+      "label": "Магазин",
+      "text": "{address} ({name})"
+    },
+    "purchase": {
+      "label": "Покупка",
+      "text": "{storeAddress} ({storeName}) от {date}"
+    },
+    "product": {
+      "label": "Товар",
+      "text": "{name}"
+    },
+    "scanQr": "Отсканировать QR",
+    "chooseStore": "Выберите магазин",
+    "choosePurchase": "Выберите покупку",
+    "chooseProduct": "Выберите товар",
+    "camera": "Камера",
+    "gallery": "Галерея",
+    "errors": {
+      "ratingIsEmpty": ""
+    },
+    "reviewCreated": {
+      "title": "Благодарим за обратную связь, ваш отзыв отправлен!",
+      "action": "Здорово"
+    }
+  },
+  "coupon": {
+    "expires": {
+      "1": "Сгорит через ",
+      "2": {
+        "zero": "{} дней",
+        "one": "{} день",
+        "two": "{} дня",
+        "few": "{} дня",
+        "many": "{} дней",
+        "other": "{} дней"
+      }
+    },
+    "couponPlace": "Все ваши сертификаты хранятся в профиле"
+  },
+  "cardInput": {
+    "cardNumber": {
+      "label": "Номер карты",
+      "hint": "Номер карты",
+      "validationError": "Введите корректную номер карты"
+    },
+    "cardHolder": {
+      "label": "Владелец карты",
+      "hint": "Владелец карты"
+    },
+    "cardExpiry": {
+      "label": "Действует до",
+      "hint": "Действует до",
+      "validationError": "Введите корректную дату"
+    },
+    "cvv": {
+      "label": "CVV",
+      "hint": "CVV",
+      "description": "3 цифры на обороте карты"
+    }
+  },
+  "successOrderScreen": {
+    "title": "Приятного аппетита!",
+    "message": "Начисленные за покупку бонусы отобразятся во вкладке «Бонусы»",
+    "buyMore": "Купить еще"
+  },
+  "aboutUsScreen": {
+    "title": "Реквизиты"
+  },
+  "applePay": {
+    "label": "Итого"
+  },
+  "coffeeProcessingScreen": {
+    "title": {
+      "1": "Поставьте ",
+      "2": "стаканчик",
+      "3": " в кофеаппарат и ожидайте приготовления"
+    }
+  },
+  "bonusProgramAccountInfoScreen": {
+    "stores": "Бонусная программа действует в магазинах:",
+    "action": "Понятно",
+    "transactions": {
+      "title": "История",
+      "statuses": {
+        "purchase": "Начисление/списание за покупку",
+        "directBonusCharge": "Начисление, не связанное с покупками",
+        "bonusBurn": "Списание просроченных бонусов",
+        "smmBonus": "Начисление бонусов за SMM",
+        "purchaseReturn": "Возврат покупки",
+        "replaceCard": "Созданы при замене карты",
+        "another": "Другая причина"
+      }
+    }
+  },
+  "review": {
+    "title": "Отзыв от {}"
+  },
+  "reviewsScreen": {
+    "title": "Отзывы покупателей",
+    "titleForStore": "Отзывы @:reviewDetailsScreen.store.text"
+  },
+  "reviewDetailsScreen": {
+    "title": "Отзыв от {}",
+    "phone": {
+      "label": "Покупатель",
+      "copied": "Номер скопирован"
+    },
+    "store": {
+      "label": "Магазин",
+      "text": "{address} ({name})"
+    },
+    "product": {
+      "label": "Товар"
+    },
+    "score": {
+      "label": "Оценка"
+    },
+    "comment": {
+      "label": "Отзыв"
+    },
+    "attachments": {
+      "label": "Приложения"
+    },
+    "purchase": {
+      "label": "Покупка от {}"
+    }
+  },
+  "imageViewer": {
+    "title": "{index} из {count}"
+  }
+};
+static const Map<String, Map<String,dynamic>> mapLocales = {"ru": ru};
+}

@@ -1,0 +1,40 @@
+[INFO] Generating build script...
+[INFO] Generating build script completed, took 321ms
+
+[WARNING] Invalidated precompiled build script due to missing asset graph.
+[INFO] Precompiling build script......
+[INFO] Precompiling build script... completed, took 689ms
+
+[INFO] Initializing inputs
+[INFO] Building new asset graph...
+[INFO] Building new asset graph completed, took 1.6s
+
+[INFO] Checking for unexpected pre-existing outputs....
+[INFO] Found 141 declared outputs which already exist on disk. This is likely because the`.dart_tool/build` folder was deleted, or you are submitting generated files to your source repository.
+
+Delete these files?
+1 - Delete
+2 - Cancel build
+3 - List conflicts
+
+
+You have hit a bug in build_runner
+Please file an issue with reproduction steps at https://github.com/dart-lang/build/issues
+
+
+StdinException: Error getting terminal line mode, OS Error: Неверный дескриптор, errno = 6
+dart:io                                                                       Stdin.readLineSync
+package:build_runner_core/src/environment/io_environment.dart 84:27           IOEnvironment.prompt
+package:build_runner_core/src/environment/overridable_environment.dart 63:16  OverrideableEnvironment.prompt
+package:build_runner_core/src/generate/build_definition.dart 546:41           _Loader._initialBuildCleanup
+package:build_runner_core/src/generate/build_definition.dart 283:17           _Loader.prepareWorkspace.<fn>
+package:build_runner_core/src/logging/logging.dart 25:30                      logTimedAsync
+package:build_runner_core/src/generate/build_definition.dart 280:13           _Loader.prepareWorkspace
+package:build_runner_core/src/generate/build_impl.dart 114:27                 BuildImpl.create
+package:build_runner_core/src/generate/build_runner.dart 34:26                BuildRunner.create
+package:build_runner/src/generate/build.dart 109:17                           build
+package:build_runner/src/entrypoint/build.dart 42:18                          BuildCommand._run
+package:args/command_runner.dart 212:13                                       CommandRunner.runCommand
+package:build_runner/src/entrypoint/run.dart 26:18                            run
+.dart_tool\build\entrypoint\build.dart 68:16                                  main
+

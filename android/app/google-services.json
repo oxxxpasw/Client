@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "1051465619894",
+    "project_id": "coffeelilv2",
+    "storage_bucket": "coffeelilv2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051465619894:android:01b1e7437a207f9827c917",
+        "android_client_info": {
+          "package_name": "by.lilcoffee.guest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALqzjBPmXbeIIW6YsJW8Z3WOTXS0KVcEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051465619894:android:01b1e7437a207f9827c917",
+        "android_client_info": {
+          "package_name": "by.lilcoffee.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALqzjBPmXbeIIW6YsJW8Z3WOTXS0KVcEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051465619894:android:6a59c75a2507338927c917",
+        "android_client_info": {
+          "package_name": "by.lilcoffee.partners"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALqzjBPmXbeIIW6YsJW8Z3WOTXS0KVcEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

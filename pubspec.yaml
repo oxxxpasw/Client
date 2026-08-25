@@ -1,0 +1,192 @@
+name: sosedifedi
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.1.226+278
+
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  async: any
+  cupertino_icons: ^1.0.2
+  collection: any
+  badges: ^3.1.2
+  http: ^1.1.0
+  flutter_bloc: ^9.1.1
+  shared_preferences: ^2.0.7
+  sqflite: ^2.0.0+4
+  intl: ^0.20.2
+  uuid: ^4.1.0
+  flutter_libphonenumber: ^2.8.4
+  pin_code_fields: ^8.0.1
+  url_launcher: ^6.0.17
+  firebase_core: ^4.14.0
+  firebase_messaging: ^16.6.0
+  barcode_widget: ^2.0.2
+  screen_brightness: ^2.1.11
+  flutter_local_notifications: ^22.3.0
+  flutter_image: ^4.1.0
+  json_annotation: ^4.12.0
+  freezed_annotation: ^3.1.0
+  transparent_image: ^2.0.0
+  carousel_slider: ^5.0.0
+  cached_network_image: ^3.2.0
+  modal_bottom_sheet: ^3.0.0
+  percent_indicator: ^4.2.2
+  scrollable_positioned_list: ^0.3.5
+  scroll_to_index: ^3.0.1
+  rxdart: ^0.28.0
+  flutter_form_builder: ^10.3.0+2
+  form_builder_validators: ^11.3.0
+  flutter_staggered_grid_view: ^0.7.0
+  geolocator: ^14.0.3
+  sliding_up_panel: ^2.0.0+1
+  dio: ^5.3.3
+  dio_smart_retry: ^7.0.1
+  connectivity_plus: ^7.3.1
+  sliver_tools: ^0.2.6
+  flutter_picker: ^2.0.3
+  flutter_datetime_picker: ^1.5.1
+  flutter_holo_date_picker: ^2.0.0
+  device_info_plus: ^13.2.0
+  package_info_plus: ^10.2.1
+  fluttertoast: ^10.0.0
+  jiffy: ^6.2.1
+  in_app_update: ^5.0.0
+  upgrader: ^13.7.0
+  equatable: ^2.0.3
+  synchronized: ^3.0.0+2
+  bloc_concurrency: ^0.3.0
+  flash: ^3.0.5+2
+  retry: ^3.1.0
+  get_it: ^9.2.1
+  injectable: ^3.0.0
+  auto_route: ^11.1.0
+  sms_autofill: ^2.2.0
+  automatic_animated_list: ^1.1.0
+  app_links: ^7.2.1
+  http_mock_adapter: ^0.6.0
+  mobile_scanner: ^7.4.0
+  permission_handler: ^13.0.1
+  yandex_mapkit:
+    path: tools/yandex_mapkit
+  turf: ^0.0.7
+  scrollview_observer: ^1.9.1
+  flutter_inappwebview: ^6.0.0
+  flutter_svg: ^2.0.10+1
+  path_provider: ^2.0.13
+  dio_cache_interceptor: ^4.0.7
+  auto_size_text: ^3.0.0
+  flutter_html: ^3.0.0
+  dropdown_button2: ^3.1.0
+  easy_localization: ^3.0.3
+  multiple_localization: ^0.6.0
+  isar_community: 3.2.1
+  isar_community_flutter_libs: 3.2.1
+  flutter_displaymode: ^0.7.0
+  html: ^0.15.4
+  pubspec_parse: ^1.5.0
+  provider: ^6.0.5
+  gs1_barcode_parser: ^1.0.5
+  phone_numbers_parser: ^9.0.25
+  animations: ^3.0.0
+  android_intent_plus: ^6.1.0
+  wakelock_plus: ^1.2.7
+  app_settings: ^9.0.0
+  path: ^1.9.0
+  form_builder_image_picker: ^4.1.0
+  pay: ^3.2.0
+  photo_view: ^0.15.0
+
+dev_dependencies:
+  auto_route_generator: ^10.6.0
+  pigeon: ^28.0.0
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.16.0
+  json_serializable: ^6.9.5
+  freezed: ^4.0.0
+  injectable_generator: ^3.1.3
+  url_launcher_platform_interface: ^2.1.2
+  plugin_platform_interface: ^2.1.4
+  app_links_platform_interface: ^2.0.2
+  firebase_messaging_platform_interface: ^4.3.0
+  firebase_core_platform_interface: ^8.1.1
+  fake_async: ^1.3.1
+
+dependency_overrides:
+  intl: ^0.20.2
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: GothamPro
+      fonts:
+        - asset: fonts/gothampro/gothampro.ttf
+        - asset: fonts/gothampro/gothampro_medium.ttf
+          weight: 500
+        - asset: fonts/gothampro/gothampro_bold.ttf
+          weight: 700
+        - asset: fonts/gothampro/gothampro_black.ttf
+          weight: 900
+        - asset: fonts/gothampro/gothampro_light.ttf
+          weight: 300
+        - asset: fonts/gothampro/gothampro_italic.ttf
+          style: italic
+        - asset: fonts/gothampro/gothampro_mediumitalic.ttf
+          weight: 500
+          style: italic
+        - asset: fonts/gothampro/gothampro_bolditalic.ttf
+          weight: 700
+          style: italic
+        - asset: fonts/gothampro/gothampro_blackitalic.ttf
+          weight: 900
+          style: italic
+        - asset: fonts/gothampro/gothampro_lightitalic.ttf
+          weight: 300
+          style: italic
+
+    - family: Inter
+      fonts:
+        - asset: fonts/inter/Inter-Regular.ttf
+        - asset: fonts/inter/Inter-Thin.ttf
+          weight: 100
+        - asset: fonts/inter/Inter-ExtraLight.ttf
+          weight: 200
+        - asset: fonts/inter/Inter-Light.ttf
+          weight: 300
+        - asset: fonts/inter/Inter-Medium.ttf
+          weight: 500
+        - asset: fonts/inter/Inter-SemiBold.ttf
+          weight: 600
+        - asset: fonts/inter/Inter-Bold.ttf
+          weight: 700
+        - asset: fonts/inter/Inter-ExtraBold.ttf
+          weight: 800
+        - asset: fonts/inter/Inter-Black.ttf
+          weight: 900
+
+    - family: CustomIcons
+      fonts:
+        - asset: fonts/CustomIcons.ttf
+    - family: DerevenkaDobrenka
+      fonts:
+        - asset: fonts/DerevenkaDobrenka.ttf
+    - family: VasekItalic
+      fonts:
+        - asset: fonts/VasekItalic.ttf
+  assets:
+    - assets/
+    - assets/images/
+    - assets/images/doodles/
+    - assets/svg/
+    - assets/svg/country-flags/
+    - assets/svg/icons/
+    - assets/svg/arrows/

@@ -1,0 +1,19 @@
+
+Running Gradle task 'assembleAppgalleryRelease'...              
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'assembleAppgalleryRelease' is ambiguous in root project 'android' and its subprojects. Candidates are: 'assembleAppreleaseAppgalleryRelease', 'assembleAppreleaseAppgalleryReleaseUnitTest', 'assembleApptestAppgalleryRelease', 'assembleApptestAppgalleryReleaseUnitTest'.
+
+* Try:
+> Run gradlew tasks to get a list of available tasks.
+> For more on name expansion, please refer to https://docs.gradle.org/8.12/userguide/command_line_interface.html#sec:name_abbreviation in the Gradle documentation.
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 14s
+Running Gradle task 'assembleAppgalleryRelease'...                 14,8s
+Gradle task assembleAppgalleryRelease failed with exit code 1

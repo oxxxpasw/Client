@@ -1,0 +1,26 @@
+// dart format width=80
+/// GENERATED CODE - DO NOT MODIFY BY HAND
+/// *****************************************************
+///  FlutterGen
+/// *****************************************************
+
+// coverage:ignore-file
+// ignore_for_file: type=lint
+// ignore_for_file: deprecated_member_use,directives_ordering,implicit_dynamic_list_literal,unnecessary_import
+
+abstract final class FontFamily {
+  /// Font family: CustomIcons
+  static const String customIcons = 'CustomIcons';
+
+  /// Font family: DerevenkaDobrenka
+  static const String derevenkaDobrenka = 'DerevenkaDobrenka';
+
+  /// Font family: GothamPro
+  static const String gothamPro = 'GothamPro';
+
+  /// Font family: Inter
+  static const String inter = 'Inter';
+
+  /// Font family: VasekItalic
+  static const String vasekItalic = 'VasekItalic';
+}
